@@ -23,8 +23,8 @@ document.addEventListener("keydown", (ev) => {
 });
 function changeSlide(direction) {
   if (direction === "up") {
-    if (activeSlideIndex === slidesCount) {
-      activeSlideIndex = 0;
+    if (activeSlideIndex === slidesCount - 1) {
+      activeSlideIndex = -1;
     }
     activeSlideIndex += 1;
   } else if (direction === "down") {
